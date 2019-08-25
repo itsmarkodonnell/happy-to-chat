@@ -1,14 +1,118 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html style="background-color: #1D6665">
+  <head>
+    <style>
+      body {
+        color: white;
+      }
+      h1 {
+        text-align: center;
+        padding: 20px 0px;
+      }
+      .container {
+        padding: 0px 0px;
+        width: 60%;
+        margin: 0px auto;
+      }
+      p {
+        color: white;
+      }
+      li {
+        padding: 5px 3px;
+      }
+      #img-container {
+        display: flex;
+        max-width: 90%;
+        min-width: 290px;
+        flex-wrap: wrap;
+        margin: 0px auto;
+        justify-items: center;
+      }
+      img {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        min-width: 300px;
+        height: auto; /* maintain aspect ratio*/
+        margin: auto; /*optional centering of image*/
+      }
+      .img-wrapper {
+        display: flex;
+        flex: 1;
+        justify-items: center;
+        height: 400px;
+        padding-right: 10px;
+      }
 
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
-
-</body>
-<script type="text/javascript" src="https://form.jotformeu.com/jsform/92366652967371"></script>
+      @media only screen and (max-width: 600px) {
+        .container {
+          padding: 0px 0px;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="text-align: center; padding-top: padding: 20px 0px;">
+        Loneliness in NI
+      </h1>
+    </header>
+    <section styles="display: flex; justify-items: center;">
+      <div class="container">
+        <p>
+          Loneliness in Northern Ireland is currently described as an
+          ‘epidemic’. While that may not come as a surprise (even as we live in
+          the most connected time) the nature of the problem appears to be
+          misunderstood. The general perception is that older people are the
+          most likely group to experience loneliness, however, that does not
+          tell the whole story. People of all ages are reporting feelings of
+          loneliness, especially those going through life transitions like
+          moving, illness, starting a new job, relationship breakdown etc.
+        </p>
+      </div>
+      <div class="container">
+        <ul>
+          <li>
+            One in five adults in Northern Ireland are “always” or “often”
+            lonely (Co-op & British Red Cross)
+          </li>
+          <li>
+            Around one in three young people feel lonely ‘often’ or ‘always’
+            (Co-op & British Red Cross)
+          </li>
+          <li>
+            Loneliness and social isolation puts people at 50% increased risk of
+            an early death (RCGPNI)
+          </li>
+          <li>
+            79% of people said that small moments of connection are a valuable
+            way of tackling loneliness (Campaign to End Loneliness, 2018)
+          </li>
+        </ul>
+        <p>
+          Loneliness is very much subjective, it happens when there is a
+          mismatch between the quantity and quality of social relationships we
+          have and those we want. It’s a tricky issue to tackle because it
+          requires all of us to help but the exciting thing is that small
+          actions can make a huge difference.
+        </p>
+      </div>
+    </section>
+    <section styles="display: flex; justify-items: center;">
+      <h1>"Happy to Chat" badge</h1>
+      <div id="img-container">
+        <div class="img-wrapper">
+          <img src="img/hpy-2-chat.png" />
+        </div>
+        <div class="img-wrapper">
+          <img src="img/FSA00479.jpg" />
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    type="text/javascript"
+    src="https://form.jotformeu.com/jsform/92366652967371"
+  ></script>
 </html>
