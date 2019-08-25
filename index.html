@@ -4,10 +4,25 @@
     <style>
       body {
         color: white;
+        font-family: "Brandon Grotesque Light";
       }
       h1 {
+        font-family: "Cooper Black Regular";
+        text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+        color: #fffac6;
+        letter-spacing: 0.07em;
         text-align: center;
         padding: 20px 0px;
+        font-size: 40px;
+      }
+      h2 {
+        font-family: "Cooper Black Regular";
+        text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+        color: #fffac6;
+        letter-spacing: 0.07em;
+        text-align: center;
+        padding: 20px 0px;
+        font-size: 30px;
       }
       .container {
         padding: 0px 0px;
@@ -16,13 +31,15 @@
       }
       p {
         color: white;
+        font-size: 15px;
       }
       li {
         padding: 5px 3px;
+        font-size: 15px;
       }
       #img-container {
         display: flex;
-        max-width: 90%;
+        max-width: 80%;
         min-width: 290px;
         flex-wrap: wrap;
         margin: 0px auto;
@@ -35,6 +52,16 @@
         min-width: 300px;
         height: auto; /* maintain aspect ratio*/
         margin: auto; /*optional centering of image*/
+      }
+      a,
+      a:hover,
+      a:click,
+      a:visited {
+        border: none;
+        outline: none;
+        text-decoration: none;
+        color: inherit;
+        -webkit-tap-highlight-color: white;
       }
       .img-wrapper {
         display: flex;
@@ -49,6 +76,22 @@
           padding: 0px 0px;
           width: 100%;
         }
+      }
+
+      @font-face {
+        font-family: "Cooper Black Regular";
+        font-style: normal;
+        font-weight: normal;
+        src: local("Cooper Black Regular"),
+          url("fonts/COOPBL.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: "Brandon Grotesque Light";
+        font-style: normal;
+        font-weight: normal;
+        src: local("Brandon Grotesque Light"),
+          url("fonts/brandon-grotesque-light-58a8a4b38001d.woff") format("woff");
       }
     </style>
   </head>
@@ -100,7 +143,7 @@
       </div>
     </section>
     <section styles="display: flex; justify-items: center;">
-      <h1>"Happy to Chat" badge</h1>
+      <h2>"Happy to Chat" badge</h2>
       <div id="img-container">
         <div class="img-wrapper">
           <img src="img/hpy-2-chat.png" />
@@ -108,6 +151,39 @@
         <div class="img-wrapper">
           <img src="img/FSA00479.jpg" />
         </div>
+      </div>
+    </section>
+
+    <section styles="display: flex; justify-items: center;">
+      <div class="container">
+        <p style="padding-top: 50px">
+          The Happy to Chat badge has been created by the
+          <a href="https://www.globalshapers.org/hubs/belfast-hub"
+            >Belfast Global Shapers</a
+          >
+          and supported by the Red Cross NI.
+        </p>
+        <p>
+          We know the “Happy to Chat” is obviously not going to solve the issue
+          of loneliness in Northern Ireland but it can do two things; raise
+          awareness that loneliness is an issue we are facing across the
+          country, impacting people of all ages; and help break down that
+          initial barrier that someone who is experiencing loneliness can feel
+          when searching for the most basic of human interaction.
+        </p>
+        <p>
+          We hope you might consider popping the badge on when you would be
+          happy to chat to someone. We fully understand sometimes you just want
+          to sit with your own thoughts or put your headphones on, but there
+          might be a moment, on the bus or in a coffee shop, when you would be
+          happy to have a quick chat. A small act like that can make a huge
+          difference. We would also encourage you to follow the work of the Red
+          Cross and the Campaign to End Loneliness, and we’d be delighted if you
+          wanted to share a photo of the badge and spread the message.
+        </p>
+        <p style="color:#F37F81;">
+          The badges were designed by the incredibly talented Emma McKernan
+        </p>
       </div>
     </section>
   </body>
